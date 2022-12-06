@@ -1,0 +1,44 @@
+@import '../../css/var.scss';
+@import '../../css/functions.scss';
+
+.homeintro {
+  visibility: hidden;
+  overflow: hidden;
+  &__image {
+    background-position: center center;
+    transform-origin: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    will-change: transform, opacity
+  }
+  &__text-wrapper {
+    overflow: hidden;
+  }
+  &__text {
+    display: block;
+  }
+  .splitAnimation {
+    padding: 0 5rem;
+    overflow: hidden;
+  }
+  &__overlay {
+    &--right {
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 50%;
+      position: absolute;
+    }
+    &--left {
+      top: 0;
+      bottom: 0;
+      right: 50%;
+      left: 0;
+      position: absolute;
+    }
+  }
+  &__button {
+
+  }
+}
+

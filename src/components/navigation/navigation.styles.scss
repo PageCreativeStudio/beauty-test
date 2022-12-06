@@ -1,0 +1,12 @@
+.servicesnav {
+    position: absolute;
+    left: 0;
+    top: -45px;
+    z-index: 1000;
+}
+
+@media (max-width: 767px) {
+    .servicesnav {
+        top: -60px;
+    }
+}

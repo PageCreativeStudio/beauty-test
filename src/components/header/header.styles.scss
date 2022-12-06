@@ -1,0 +1,22 @@
+.header {
+  position: fixed;
+  &__logo {
+    transition: 0.3s;
+    &--active {
+      transform: translateY(0);
+    }
+    &--light {
+      filter: brightness(0) invert(1);
+    }
+    &--large {
+      @media screen and (min-width: 768px) {
+        width: 110px;
+      }
+    }
+  }
+  .animate-logo-in {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+}
+

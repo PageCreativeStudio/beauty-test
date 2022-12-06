@@ -1,0 +1,17 @@
+.bloglatest {
+  &__image {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 1023px) {
+      height: 250px;
+    }
+  }
+  &__bg {
+    bottom: 14%;
+    @media screen and (max-width: 1023px) {
+      bottom: -30px;
+    }
+  }
+}

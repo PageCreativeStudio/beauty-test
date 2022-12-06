@@ -1,0 +1,16 @@
+.scroll-slider {
+    &__wrapper {
+        background: linear-gradient(
+            to right, 
+            #f2f2f0 0%, 
+            #f2f2f0 50%, 
+            #272523 50%, 
+            #272523 100%
+          );
+    }
+    &__image{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

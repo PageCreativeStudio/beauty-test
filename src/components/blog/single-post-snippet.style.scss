@@ -1,0 +1,36 @@
+.post-snippet {
+    cursor: pointer;
+    min-height: 33.33vw;
+    @media screen and (max-width: 767px) {
+        min-height: 50vh;
+        .post-snippet {
+            &__overlay {
+                opacity: 0.7;
+            }
+            &__content {
+                opacity: 1;
+            }
+        }
+    }
+    &__content {
+        opacity: 0;
+        transform: translateY(15px)
+    }
+    &__overlay {
+        opacity: 0;
+    }
+    &__overlay, &__content  {
+        transition: 0.3s;
+    }
+    &:hover {
+        .post-snippet {
+            &__content {
+                opacity: 1;
+                transform: translateY(0)
+            }
+            &__overlay {
+                opacity: 1;
+            }
+        }
+    }
+}

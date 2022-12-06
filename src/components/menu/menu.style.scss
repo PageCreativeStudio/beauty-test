@@ -1,0 +1,53 @@
+.menu {
+  width: 55px;
+  height: 45px;
+  border: 1px solid;
+  z-index: 1000000;
+  position: relative;
+  transition: width 0.3s, height 0.3s, transform 0.3s, border-radius 0.3s;
+  will-change: transform, opacity, width, height, border-radius;
+
+  &--active {
+    transform: translateY(0);
+  }
+  &--light {
+    span, .lets-talk, .menu {
+      color: #fff;
+      transition: 0.3s;
+    }
+    
+    a {
+      border-color: #fff !important;
+    }
+  }
+  &:hover {
+    transform: translate(5px, -5px) !important;
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+    letter-spacing: 2px;
+    .menu {
+      &__textwrapper-Removed {
+        span, div {
+          transform: translateY(-19px);
+        }
+      }
+    }
+  }
+  &__textwrapper {
+    overflow: hidden;
+    position: relative;
+    span {
+      display: block;
+      transition: 0.3s;
+    }
+    div {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      transition: 0.3s;
+    }
+  }
+}

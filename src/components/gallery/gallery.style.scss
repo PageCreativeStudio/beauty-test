@@ -1,0 +1,56 @@
+@import '../../../node_modules/@glidejs/glide/dist/css/glide.core.min.css';
+
+@import '../../../node_modules/simplelightbox/src/simple-lightbox.scss';
+
+.glide {
+    &__slide-item {
+        height: 20vw;
+        margin: 0px 0.5vw !important;
+        @media screen and (max-width: 767px) {
+            height: 45vw;
+        }
+    }
+    &__arrows {
+        width: 100%;
+        top: 42%;
+    }
+}
+
+.sl-wrapper .sl-close {
+  left: 30px !important;
+  text-decoration: underline;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  width: 68px !important;
+}
+
+.sl-next, .sl-prev {
+    background: white !important;
+    padding: 0.7rem !important;
+    border-radius: 100px !important;
+}
+
+.sl-wrapper .sl-navigation button {
+    width: 44px;
+}
+.sl-wrapper{
+  .left-arrow {
+    transform: rotate(-180deg);
+  }
+}
+.sl-wrapper {
+    .scroll-content {
+        @media screen and (max-width: 1024px){
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+@media screen and (max-width: 767px){
+  .sl-wrapper .sl-image {
+    background: #f8f6f5;
+  }
+}
