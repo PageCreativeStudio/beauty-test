@@ -31,35 +31,35 @@ exports.createPages = async ({ graphql, actions }) => {
     switch (page.pageType) {
 
       case 'Home' : 
-        productTemplate = path.resolve(`./src/templates/home.js`)
+        productTemplate = path.resolve(`src/templates/home.js`)
         break;
 
       case 'About' : 
-        productTemplate = path.resolve(`./src/templates/about.js`) 
+        productTemplate = path.resolve(`src/templates/about.js`) 
         break;
   
       case 'Gallery' : 
-        productTemplate = path.resolve(`./src/templates/gallery.js`)
+        productTemplate = path.resolve(`src/templates/gallery.js`)
         break;
 
       case 'Contact' : 
-        productTemplate = path.resolve(`./src/templates/contact.js`)
+        productTemplate = path.resolve(`src/templates/contact.js`)
         break;
       
       case 'Influencer' : 
-        productTemplate = path.resolve(`./src/templates/influencer.js`)
+        productTemplate = path.resolve(`src/templates/influencer.js`)
         break;
 
       case 'Essentials' : 
-        productTemplate = path.resolve(`./src/templates/essentials.js`)
+        productTemplate = path.resolve(`src/templates/essentials.js`)
         break;
 
       case 'Packaging' : 
-        productTemplate = path.resolve(`./src/templates/packaging.js`)
+        productTemplate = path.resolve(`src/templates/packaging.js`)
         break;
 
       default:
-        productTemplate = path.resolve(`./src/templates/home.js`)
+        productTemplate = path.resolve(`src/templates/home.js`)
         break;
 
     }
